@@ -4,5 +4,15 @@ def make_album(singer_name,album_name,number=''):
         pt['number']=number
     return pt
 
-ptt=make_album('lee','ailee')
-print(ptt)
+while True:
+    singername=input('singer_name:')
+    if singername=='q':
+        break
+    albumname=input('album_name:')
+    if albumname=='q':
+        break
+    ptt=make_album(singername,albumname)
+    print(ptt)
+
+
+
